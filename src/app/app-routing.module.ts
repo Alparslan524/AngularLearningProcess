@@ -8,3 +8,4 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+//Sayfalar araso routing bilgileri burada yer alır

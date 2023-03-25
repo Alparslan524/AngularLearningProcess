@@ -1,5 +1,22 @@
 # AngularLearningProcess
 
+## Proje Amacı
+[Gençay Yıldız Angular Eğitimi](https://youtube.com/playlist?list=PLQVXoXFVVtp1DcC4z0euk71_ICphrOEFV) derslerinde öğrendiğim ve yazdığım Angular Reposudur
+*** 
+## Kullanılan Dil ve Teknolojiler
+* Angular
+* Html-Css-Bootstrap
+* JavaScript
+* TypeScript
+* Node.Js
+***
+
+
+# Alparslan Aydoğan
+- [GitHub](https://github.com/Alparslan524)
+- [Linkedin](https://www.linkedin.com/in/alparslan-aydoğan-6038771bb/)
+***
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
 ## Development server

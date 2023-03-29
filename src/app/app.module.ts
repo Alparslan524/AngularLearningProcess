@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    // compomnentlerin kullanılabilmesi için burada declare(bildirmek) edilmesi gerekiyor. 
+    // Component ilk defa oluşturulurken Angular CLI direkt buraya ekliyor 
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,31 @@
-Hello World!
-<br>
-Project Name: {{title}}
-<app-home></app-home>
+Project Name: {{ title }}
+<!-- Data Binding 1: Text Interpolation => Component.ts dosyasındaki değişkenleri 2 tane süslü parantezle html sayfasında kullanabiliriz -->
+<br /><br />
+
+<app-home [pageName]="sendValue">
+  <!--Data Binding 2: Property Binding-->
+</app-home>
+
+<br /><br />
+
+<button (click)="btnClick()">{{ btnText }}</button>
+<!-- Data Binding 3: Event Binding. Butona tıklandığı anda home.component.ts kısmına btnClick methodu çalışacak-->
+<!--Birden fazla binding için fonksiyonları ; ile ayırabiliriz-->
+
+<br /><br />
+
+<!--Data Binding 4: Two-Way Data Binding-->
+<input type="text" [(ngModel)]="twoWayData" />
+<h1 style="background-color: yellow">{{ twoWayData }}</h1>
+<!-- inputtaki text değiştiği anda two-way binding sayesinde h1 deki değer de değişiyor -->
+
+<br /><br />
+
+<button [disabled]="disabled">Attribute Binding</button>
+<!--Data Binding 5: Attribute Binding => Property Binding ile Attribute Binding benzer. Attribute binding ile html elementlerine mesela
+butonun tıklanabilirlik durumunu ayarlayabiliriz. Ama sadece html özellikleri -->
+
+<br /><br />
+
+<button [style.background-color]="bgColor">Style Binding</button>
+<!--Data Binding 6: Attribute Binding in aynısı sadecce style ve class özellikleri atanır -->

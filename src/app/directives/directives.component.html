@@ -1,0 +1,35 @@
+<hr>
+<h1 id="start">directives component start!</h1>
+
+<div *ngFor="let name of names">{{ name }}</div><!-- ngFor Directive -->
+
+<br>
+
+<div *ngFor="let name of names; index as index">{{ name }} - {{ index }}</div><!-- İndex değerlerini de alabiliyoruz -->
+
+<br>
+
+<div *ngIf="number == 5">Number equals five!!</div><!-- ngIf Directive. Sayı 5e eşitse divi gösterir -->
+
+<br>
+
+<div [ngSwitch]="cityPlate"> <!-- ngSwitch Directive -->
+  <div *ngSwitchCase="34">İstanbul</div>
+  <div *ngSwitchCase="42">Konya</div>
+  <div *ngSwitchCase="06">Ankara</div>
+</div>
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<h1 id="end">directives component end!</h1>
+<hr>

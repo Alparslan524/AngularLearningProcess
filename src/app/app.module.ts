@@ -5,7 +5,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { DirectivesComponent } from './directives/directives.component';
+import { CustomDirectivesDirective } from './directives/custom-directives.directive';
+import { DefaultDirectivesComponent } from './default-directives/default-directives.component';
+import { CustomDirectivesWithParameterDirective } from './directives/custom-directives-with-parameter.directive';
+import { HostListenerDirectivesDirective } from './directives/host-listener-directives.directive';
+import { HostBindingDirectivesDirective } from './directives/host-binding-directives.directive';
 
 @NgModule({
   declarations: [
@@ -13,7 +17,12 @@ import { DirectivesComponent } from './directives/directives.component';
     // Component ilk defa oluşturulurken Angular CLI direkt buraya ekliyor 
     AppComponent,
     HomeComponent,
-    DirectivesComponent
+    DefaultDirectivesComponent,
+    CustomDirectivesDirective,
+    DefaultDirectivesComponent,
+    CustomDirectivesWithParameterDirective,
+    HostListenerDirectivesDirective,
+    HostBindingDirectivesDirective
   ],
   imports: [
     BrowserModule,

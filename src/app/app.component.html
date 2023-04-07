@@ -1,5 +1,5 @@
-<hr>
-<h1 id="start" > App Component start! </h1>
+<hr />
+<h1 id="start">App Component start!</h1>
 Project Name: {{ title }}
 <!-- Data Binding 1: Text Interpolation => Component.ts dosyasındaki değişkenleri 2 tane süslü parantezle html sayfasında kullanabiliriz -->
 
@@ -27,11 +27,34 @@ butonun tıklanabilirlik durumunu ayarlayabiliriz. Ama sadece html özellikleri 
 <button [style.background-color]="bgColor">Style Binding</button>
 <!--Data Binding 6: Attribute Binding in aynısı sadecce style ve class özellikleri atanır -->
 
-<h1 id="end" > App Component end! </h1>
-<hr>
+<h1 id="end">App Component end!</h1>
+<hr />
 
 <app-home [pageName]="sendValue">
   <!--Data Binding 2: Property Binding-->
 </app-home>
 
-<app-directives> </app-directives>
+<app-default-directives></app-default-directives>
+
+<hr />
+<h1 id="start">Custom Directive Using Start</h1>
+
+<div appCustomDirectives>
+  Bu HTML nesnesini Custom Directive ile manipüle edicez
+</div>
+
+<div appCustomDirectivesWithParameter color="green"> <!-- Parametreli Custom Directive -->
+  Bu HTML nesnesini de parametreli Custom Directive ile manipüle edicez
+</div>
+
+<div appHostListenerDirectives >
+  Click for Alert!!!
+</div>
+
+<div appHostBindingDirectives>
+  Bu HTML nesnesini HostBinding Directive ile manipüle edicez
+</div>
+
+
+<h1 id="start">Custom Directive Using End</h1>
+<hr />

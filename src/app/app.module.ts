@@ -10,6 +10,9 @@ import { DefaultDirectivesComponent } from './default-directives/default-directi
 import { CustomDirectivesWithParameterDirective } from './directives/custom-directives-with-parameter.directive';
 import { HostListenerDirectivesDirective } from './directives/host-listener-directives.directive';
 import { HostBindingDirectivesDirective } from './directives/host-binding-directives.directive';
+import { CustomIfStructuralDirectiveDirective } from './directives/custom-if-structural-directive.directive';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { CustomForStructuralDirectivesDirective } from './directives/custom-for-structural-directives.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { HostBindingDirectivesDirective } from './directives/host-binding-direct
     DefaultDirectivesComponent,
     CustomDirectivesWithParameterDirective,
     HostListenerDirectivesDirective,
-    HostBindingDirectivesDirective
+    HostBindingDirectivesDirective,
+    CustomIfStructuralDirectiveDirective,
+    StructuralDirectivesComponent,
+    CustomForStructuralDirectivesDirective
   ],
   imports: [
     BrowserModule,

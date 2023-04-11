@@ -1,0 +1,12 @@
+<h1 id="start">structural-directives start!!</h1>
+
+<p *appCustomIfStructuralDirective="true">İf true, Dom object will appear</p><!-- If satructural directives -->
+
+<li *appCustomForStructuralDirectives="3">Hello World</li><!-- For satructural directives -->
+
+
+<li *appCustomForStructuralDirectives="3; let i = index2">Hello World {{i}} </li><!-- For satructural directives ama içeriden değer döndürerek -->
+<!-- buradaki index2 ile "@Input() set appCustomForStructuralDirectives" içindeki index2 aynı olacak -->
+
+
+<h1 id="start">structural-directives end!!</h1>

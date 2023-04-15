@@ -13,6 +13,8 @@ import { HostBindingDirectivesDirective } from './directives/host-binding-direct
 import { CustomIfStructuralDirectiveDirective } from './directives/custom-if-structural-directive.directive';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { CustomForStructuralDirectivesDirective } from './directives/custom-for-structural-directives.directive';
+import { PipeComponentComponent } from './pipe-component/pipe-component.component';
+import { CustomPipePipe } from './pipes/custom-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { CustomForStructuralDirectivesDirective } from './directives/custom-for-
     HostBindingDirectivesDirective,
     CustomIfStructuralDirectiveDirective,
     StructuralDirectivesComponent,
-    CustomForStructuralDirectivesDirective
+    CustomForStructuralDirectivesDirective,
+    PipeComponentComponent,
+    CustomPipePipe,
   ],
   imports: [
     BrowserModule,

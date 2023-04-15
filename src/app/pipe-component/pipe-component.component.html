@@ -1,0 +1,32 @@
+<h1 id="start">pipe component start!!</h1>
+
+<!-- Pipe: bir verinin görüntülenme şeklini değiştirmek için kulanılan bir yapıdır. Verinin sadece görüntüsü üzerinde 
+oynama yapabileceğimiz bir yapıdır. Mesela number bir değeri parasal değer olarak gösterebiliriz -->
+
+<h2>{{ name }}</h2>
+
+<h2>{{ name | uppercase }}</h2>
+<h2>{{ name | lowercase }}</h2>
+
+<h2>{{ name | slice : 1:3  }}</h2> <!-- lp -->
+
+<h2>{{ comment | titlecase }}</h2> <!-- Bu Bir Denemedir Looo! -->
+
+<h2>{{price | currency }} </h2> <!-- $50 -->
+<h2>{{price | currency : "₺" }} </h2> <!-- ₺50 -->
+
+<h2>{{price | percent }} </h2> <!-- 5,000% -->
+
+<!-- Custom Pipe -->
+<!-- ng g p pipeName ile custom pipe oluşturulabilir -->
+<h2>{{ customPipeText | customPipe : 6:14 }} </h2> <!-- 6dan başlasın 14e kadar getirsin. 14 dahil değil. 0dan başlıyor-->
+
+<h2>{{ date | date }} </h2> <!-- Sep 19, 2002  -->
+<h2>{{ date | date: "fullDate" }} </h2> 
+<h2>{{ date | date: "medium" }} </h2> 
+<h2>{{ date | date: "shortTime" }} </h2> 
+<h2>{{ date | date: "mm:ss" }} </h2> 
+
+
+
+<h1 id="end">pipe component end!!</h1>

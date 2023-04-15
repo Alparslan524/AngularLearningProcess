@@ -17,16 +17,15 @@ oynama yapabileceğimiz bir yapıdır. Mesela number bir değeri parasal değer 
 
 <h2>{{price | percent }} </h2> <!-- 5,000% -->
 
-<!-- Custom Pipe -->
-<!-- ng g p pipeName ile custom pipe oluşturulabilir -->
-<h2>{{ customPipeText | customPipe : 6:14 }} </h2> <!-- 6dan başlasın 14e kadar getirsin. 14 dahil değil. 0dan başlıyor-->
-
 <h2>{{ date | date }} </h2> <!-- Sep 19, 2002  -->
 <h2>{{ date | date: "fullDate" }} </h2> 
 <h2>{{ date | date: "medium" }} </h2> 
 <h2>{{ date | date: "shortTime" }} </h2> 
 <h2>{{ date | date: "mm:ss" }} </h2> 
 
+<!-- Custom Pipe -->
+<!-- ng g p pipeName ile custom pipe oluşturulabilir -->
+<h2>{{ customPipeText | customPipe : 6:14 }} </h2> <!-- 6dan başlasın 14e kadar getirsin. 14 dahil değil. 0dan başlıyor-->
 
 
 <h1 id="end">pipe component end!!</h1>

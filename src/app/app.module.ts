@@ -19,6 +19,7 @@ import { ParentComponent } from './components/parentToChildCommunication/parent/
 import { ChildComponent } from './components/parentToChildCommunication/child/child.component';
 import { ChildComponent as ChildComponent2 } from './components/childToParentCommunication/child/child.component';
 import { ParentComponent as ParentComponent2 } from './components/childToParentCommunication/parent/parent.component';
+import { ComponentsLifeComponent } from './components/components-life/components-life.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ParentComponent as ParentComponent2 } from './components/childToParentC
     ChildComponent,
     ChildComponent2,
     ParentComponent2,
+    ComponentsLifeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

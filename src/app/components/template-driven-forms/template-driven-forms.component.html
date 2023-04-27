@@ -1,0 +1,16 @@
+<h1 id="start">TemplateDrivenForms Component start!</h1>
+
+<form #frm1="ngForm" (ngSubmit)="createUser(frm1.value)" >
+    <input type="text" name="name" placeholder="Name" ngModel> <br>
+    <input type="text" name="surname" placeholder="Surname" ngModel> <br>
+    <input type="tel" name="tel" placeholder="Tel" ngModel> <br>
+    <input type="email" name="email" placeholder="Email" ngModel> <br>
+    <div ngModelGroup="adress">
+        <input type="text" name="country" placeholder="Country" ngModel> <br>
+        <input type="text" name="city" placeholder="City" ngModel> <br>
+        <input type="text" name="adress" placeholder="adress" ngModel> <br>
+    </div>
+    <button>Send</button>
+</form>
+
+<h1 id="end">TemplateDrivenForms Component end!</h1>

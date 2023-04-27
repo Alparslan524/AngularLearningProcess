@@ -20,6 +20,7 @@ import { ChildComponent } from './components/parentToChildCommunication/child/ch
 import { ChildComponent as ChildComponent2 } from './components/childToParentCommunication/child/child.component';
 import { ParentComponent as ParentComponent2 } from './components/childToParentCommunication/parent/parent.component';
 import { ComponentsLifeComponent } from './components/components-life/components-life.component';
+import { TemplateDrivenFormsComponent } from './components/template-driven-forms/template-driven-forms.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ComponentsLifeComponent } from './components/components-life/components
     ChildComponent2,
     ParentComponent2,
     ComponentsLifeComponent,
+    TemplateDrivenFormsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

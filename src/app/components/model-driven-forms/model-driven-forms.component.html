@@ -1,0 +1,19 @@
+<h1 id="start">ModelDrivenForms Component start!</h1>
+
+<form [formGroup]="frm" (ngSubmit)="onSubmit()" > <!-- ngSubmit form tetiklendiğinde onSubmit fonksiyonunu çalıştırıyor -->
+    <input type="text" placeholder="Name" formControlName="name" >  <br>
+    <input type="text" placeholder="Surname" formControlName="surname" > <br>
+    <input type="tel" placeholder="Tel"formControlName="tel"  > <br>
+    <input type="email" placeholder="Email" formControlName="email" > <br>
+    <div formGroupName="adress">
+        <input type="text" placeholder="Country" formControlName="country" > <br>
+        <input type="text" placeholder="City" formControlName="city" > <br>
+        <input type="text" placeholder="adress" formControlName="adress" > <br>
+    </div>
+    
+    <button>Send</button>
+</form>
+
+
+
+<h1 id="end">ModelDrivenForms Component end!</h1>

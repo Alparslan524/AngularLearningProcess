@@ -1,6 +1,6 @@
 <h1 id="start">TemplateDrivenForms Component start!</h1>
 
-<form #frm1="ngForm" (ngSubmit)="createUser(frm1.value)" >
+<form #frm1="ngForm" (ngSubmit)="createUser(frm1.value)" > <!-- (ngSubmit) form tetiklendiğinde createUser fonksiyonunu çalıştırıyor, frm1.value'yi gönderiyor -->
     <input type="text" name="name" placeholder="Name" ngModel> <br>
     <input type="text" name="surname" placeholder="Surname" ngModel> <br>
     <input type="tel" name="tel" placeholder="Tel" ngModel> <br>

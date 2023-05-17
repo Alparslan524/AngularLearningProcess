@@ -1,9 +1,16 @@
 <h1 id="start">ModelDrivenForms Component start!</h1>
 
 <form [formGroup]="frm" (ngSubmit)="onSubmit()" > <!-- ngSubmit form tetiklendiğinde onSubmit fonksiyonunu çalıştırıyor -->
+    
     <input type="text" placeholder="Name" formControlName="name" >  <br>
+    <div *ngIf="!name.valid && (name.dirty || name.touched)"> {{name.errors | json}} </div>
+
     <input type="text" placeholder="Surname" formControlName="surname" > <br>
+    <div *ngIf="!surname.valid && (surname.dirty || surname.touched)"  >  {{surname.errors | json }} </div>
+
     <input type="tel" placeholder="Tel"formControlName="tel"  > <br>
+    <div *ngIf="!tel.valid && (tel.dirty || tel.touched)"  >  {{tel.errors | json }} </div>
+
     <input type="email" placeholder="Email" formControlName="email" > <br>
     <div formGroupName="adress">
         <input type="text" placeholder="Country" formControlName="country" > <br>
